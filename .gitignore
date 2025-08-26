@@ -1,0 +1,12 @@
+/*
+/dedicatedserver_default.cfg
+!/.gitignore
+!/rickflex-server*.cfg
+!/ruleset*
+!/start_server-IN.sh
+!/start_server-SEA.sh
+!/base
+!/base/internal
+!/base/internal/rotations
+!/base/internal/rotations/*.rotation
+/base/internal/rotations/default.rotation
