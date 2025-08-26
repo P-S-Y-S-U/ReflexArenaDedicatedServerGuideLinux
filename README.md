@@ -55,17 +55,12 @@ su
 ## Install dependencies
 ### system
 ```
-dpkg --add-architecture i386 && apt-get update -y && apt-get install -y apt-transport-https && wget -nc https://dl.winehq.org/wine-builds/Release.key && apt-key add Release.key && echo deb https://dl.winehq.org/wine-builds/debian/ stretch main >> /etc/apt/sources.list && echo deb http://ftp.de.debian.org/debian/ oldstable main >> /etc/apt/sources.list && apt-get update -y
+curl -fsSL https://dl.winehq.org/wine-builds/winehq.key | sudo gpg --dearmor -o /usr/share/keyrings/winehq-archive.gpg && echo "deb [signed-by=/usr/share/keyrings/winehq-archive.gpg] https://dl.winehq.org/wine-builds/ubuntu/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/winehq.list && apt update
 ```
 
 ### screen
 ```
 apt-get install -y screen
-```
-
-### winehq-staging
-```
-apt-get install -y winehq-staging
 ```
 
 ### _wine_ __(skip it, only do to change from winehq-staging if necessary)__
