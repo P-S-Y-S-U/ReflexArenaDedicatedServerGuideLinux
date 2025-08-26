@@ -163,7 +163,15 @@ And
 ```
 script /dev/null
 ```
+
 ## Operations
+### Open Network ports
+```
+sudo ufw allow 25787/udp
+sudo ufw allow 25797/udp
+sudo ufw status
+```
+
 ### Create screen session(s)
 ```
 screen -dmS reflex_server1
