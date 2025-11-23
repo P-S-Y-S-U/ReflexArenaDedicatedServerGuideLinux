@@ -5,6 +5,8 @@
 !/ruleset*
 !/start_server-IN.sh
 !/start_server-SEA.sh
+!/start_beta-server-SEA.sh
+!/start_beta-server-IN.sh
 !/base
 !/base/internal
 !/base/internal/rotations
